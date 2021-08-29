@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <span class="Title">My News Feed</span>
+  <span class="example-spacer"></span>
+  <button class="logout" (click)="logout()"><mat-icon>person</mat-icon></button>
+</mat-toolbar>
+
+<div class="search">
+  <mat-form-field appearance="fill" class="busqueda">
+    <mat-label>Busca una noticia</mat-label>
+    <input matInput (focusout)="search($event)">
+  </mat-form-field>
+</div>
+
+<div class = "container" >
+  <div class="row" >
+      <div *ngFor="let a of displaynews" class="col-lg-3">
+        <div class="box">
+          <img src="{{a.urlToImage}}" width="100%">
+          <h5>{{a.title}}</h5>
+          <p>{{a.description}}</p>
+          <a href ="{{a.url}}">Abrir</a>
+        </div>
+
+      </div>
+    </div>
+</div>

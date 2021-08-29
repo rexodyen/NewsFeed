@@ -1,0 +1,24 @@
+<h1>My News Feed</h1>
+
+<div class="name-container">
+  <mat-form-field appearance="fill" class="name">
+    <mat-label>Enter your user</mat-label>
+    <input matInput placeholder="User*" (focusout)="username($event)">
+  </mat-form-field>
+</div>
+
+<div class="pass-container">
+  <mat-form-field appearance="fill" class="pass">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" (focusout)="pass($event)" >
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+
+<div class="button-container">
+  <button class="login" (click)="login()">Login</button>
+  <p>OR</p>
+  <button class="register">Register</button>
+</div>

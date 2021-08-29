@@ -1,0 +1,32 @@
+.name-container {
+  text-align: center;
+  font-size: 15px;
+}
+.pass-container {
+  text-align: center;
+  font-size: 15px;
+}
+h1{
+  text-align: center;
+  font-size:75px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.button-container{
+  text-align: center;
+}
+.login{
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+}
+.register{
+  font-size: 10px;
+  width: 15%;
+}
+.name{
+  width: 30%;
+}
+.pass{
+  width: 30%;
+}
